@@ -1,0 +1,26 @@
+//全站樣式
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    color: $black;
+}
+
+img {
+    display: block;
+    /* 去除圖片底下的2-3px空白 */
+    /*vertical-align: middle;  也是去除圖片底下的2-3px空白 */
+    max-width: 100%;
+    /* 使之貼其父元素，才不會有圖片過大情況發生 */
+    height: auto;
+}
+
+.container{
+    min-width: 1110px;
+    margin: 0 auto;
+}
+
