@@ -1,35 +1,72 @@
 
 
 $font-family-base: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Segoe UI", Roboto, "Noto Sans TC", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-size-base:   16px;
-$h1-font-size:     64px;
-$h2-font-size:     48px;
+$font-size-base:   1rem; //16px
+$h1-font-size:     $font-size-base * 4; //64px
+$h2-font-size:     $font-size-base * 3; //48px
+$h3-font-size:     $font-size-base * 2.25; //36px
+$h4-font-size:     $font-size-base * 1.5; //24px
+$h5-font-size:     $font-size-base * 1.25; //20px
+$h6-font-size:     $font-size-base; //16px
+$font-size-sm:     $font-size-base * 0.875; //14px
 
-$font-size-sm: 14px;
+$line-height-base:    1.5;
+
+$font-weight-light:   300;
+$font-weight-base:    400;
+$font-weight-bold:    700;
 
 
 //Color
 $white:     #FFFFFF;
-$gray-1:    #F2F2F2;
-$gray-2:    #DEE2E6;
-$gray-3:    #DCDCDC;
-$gray-4:    #CED4DA;
-$gray-5:    #00000020;
-$gray-6:    #00000021;
-$gray-7:    #00000029;
-$gray-8:    #707070;
-$gray-9:    #6C6C6C;
-$gray-10:    #555555;
-$gray-11:    #495057;
-$gray-12:    #373A3C;
-$gray-13:    #212529;
-$gray-14:    #0A0A0A;
+$gray-1:    #F2F2F2; //pagination btn,
+$gray-2:    #DCDCDC; //tab border,
+$gray-3:    #DEE2E6; //card border,
+$gray-4:    #CED4DA; //門市據點input border,
+$gray-5:    #00000020; //門市據點card border,
+$gray-6:    #707070; //card date, special divider
+$gray-7:    #6C6C6C; //special date,
+$gray-8:    #555555; //pagination text, pagination border, special content text, blog content text
+$gray-9:    #212529; //card text, 門市據點card text,
+$gray-10:   #0A0A0A; //special content text
 $black:     #000000;
 $red:       #AA0601;
-$red-2:     #9F1213;
-$red-dark:  #650300;
-$pink:      #AA06010D;
+$red-dark:  #650300; //blog bg-color,
+$pink:      #FBF2F2;
 $orange:    #B75929;
 $brown:     #5F3E2D;
 
-$primary:  $red;
+$primary:     $red;
+$secondary:   $pink;
+$info:        $brown;
+$warning:     $orange;
+$danger:      $red-dark;
+$gray:        $gray-8;
+$deep-gray:   $gray-9;
+$light:       $gray-3;
+$dark:        $black;
+$themes: (
+    'primary':   $primary,
+    'secondary': $secondary,
+    'info':      $info,
+    'warning':   $warning,
+    'danger':    $danger,
+    'gray':      $gray,
+    'deep-gray': $deep-gray,
+    'light':     $light,
+    'dark':      $dark
+);
+
+@each $key, $value in $themes {
+    .bg-#{$key} {
+        background-color: $value;
+    }
+    .text-#{$key} {
+        color: $value;
+    }
+}
+
+
+
+//box-shadow
+$box-shadow: 0px 2px 6px #00000029;

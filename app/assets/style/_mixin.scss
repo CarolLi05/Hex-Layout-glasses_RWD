@@ -1,0 +1,32 @@
+
+@mixin hide-text {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin pc-1024{
+    @media ( max-width: 1200px){
+        @content
+    }
+};
+@mixin pad-992{
+    @media ( max-width: 992px){
+        @content
+    }
+};
+@mixin pad-768{
+    @media ( max-width: 768px){
+        @content
+    }
+};
+@mixin mobile-576{
+    @media ( max-width: 576px){
+        @content
+    }
+};
+@mixin mobile-375{
+    @media ( max-width: 320px){
+        @content
+    }
+}
