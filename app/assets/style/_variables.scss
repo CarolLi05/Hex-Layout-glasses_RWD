@@ -59,8 +59,21 @@ $themes: (
     'white':     $white
 );
 
-
-
+$space-default:  1rem;
+$space:(
+    0:  0,
+    1:  ($space-default * 0.25),
+    2:  ($space-default * 0.5),
+    3:  $space-default,
+    4:  ($space-default * 1.5),
+    5:  ($space-default * 2),
+    6:  ($space-default * 2.5),
+    7:  ($space-default * 3),
+    8:  ($space-default * 3.5),
+    9:  ($space-default * 4),
+    10: ($space-default * 4.5),
+    11: ($space-default * 5)
+);
 
 //box-shadow
 $box-shadow: 0px 2px 6px #00000029;

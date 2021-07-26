@@ -6,8 +6,11 @@
 @import "variables";
 @import "base";
 @import "mixin";
-@import "text";
-@import "background";
+
+@import "utilities/display";
+@import "utilities/space";
+@import "utilities/text";
+@import "utilities/background";
 
 @import "layout/header";
 

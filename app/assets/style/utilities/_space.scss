@@ -1,0 +1,61 @@
+
+//padding
+@each $num, $value in $space{
+    .p-#{$num} {
+        padding: $value;
+    }
+    .px-#{$num}{
+        padding-right: $value;
+        padding-left: $value;
+    }
+    .py-#{$num}{
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+    .pt-#{$num}{
+        padding-top: $value;
+    }
+    .pb-#{$num}{
+        padding-bottom: $value;
+    }
+    .pr-#{$num}{
+        padding-right: $value;
+    }
+    .pl-#{$num}{
+        padding-left: $value;
+    }
+}
+
+//margin
+@each $num,
+$value in $space {
+    .m-#{$num} {
+        margin: $value;
+    }
+
+    .mx-#{$num} {
+        margin-right: $value;
+        margin-left: $value;
+    }
+
+    .my-#{$num} {
+        margin-tom: $value;
+        margin-bottom: $value;
+    }
+
+    .mt-#{$num} {
+        margin-tom: $value;
+    }
+
+    .mb-#{$num} {
+        margin-bottom: $value;
+    }
+
+    .mr-#{$num} {
+        margin-right: $value;
+    }
+
+    .ml-#{$num} {
+        margin-left: $value;
+    }
+}
