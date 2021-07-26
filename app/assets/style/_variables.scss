@@ -9,12 +9,13 @@ $h4-font-size:     $font-size-base * 1.5; //24px
 $h5-font-size:     $font-size-base * 1.25; //20px
 $h6-font-size:     $font-size-base; //16px
 $font-size-sm:     $font-size-base * 0.875; //14px
+$font-size-xs:     $font-size-base * 0.75; //12px
 
 $line-height-base:    1.5;
 
-$font-weight-light:   300;
 $font-weight-base:    400;
 $font-weight-bold:    700;
+$font-weight-black:   900;
 
 
 //Color
@@ -54,17 +55,10 @@ $themes: (
     'gray':      $gray,
     'deep-gray': $deep-gray,
     'light':     $light,
-    'dark':      $dark
+    'dark':      $dark,
+    'white':     $white
 );
 
-@each $key, $value in $themes {
-    .bg-#{$key} {
-        background-color: $value;
-    }
-    .text-#{$key} {
-        color: $value;
-    }
-}
 
 
 

@@ -1,0 +1,14 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    @include hide-text;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+    display: block;
+    width: 80px;
+    height: 49px;
+}
