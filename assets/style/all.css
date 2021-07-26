@@ -133,60 +133,6 @@ ol,
 ul {
   list-style: none; }
 
-.bg-primary {
-  background-color: #AA0601; }
-
-.text-primary {
-  color: #AA0601; }
-
-.bg-secondary {
-  background-color: #FBF2F2; }
-
-.text-secondary {
-  color: #FBF2F2; }
-
-.bg-info {
-  background-color: #5F3E2D; }
-
-.text-info {
-  color: #5F3E2D; }
-
-.bg-warning {
-  background-color: #B75929; }
-
-.text-warning {
-  color: #B75929; }
-
-.bg-danger {
-  background-color: #650300; }
-
-.text-danger {
-  color: #650300; }
-
-.bg-gray {
-  background-color: #555555; }
-
-.text-gray {
-  color: #555555; }
-
-.bg-deep-gray {
-  background-color: #212529; }
-
-.text-deep-gray {
-  color: #212529; }
-
-.bg-light {
-  background-color: #DEE2E6; }
-
-.text-light {
-  color: #DEE2E6; }
-
-.bg-dark {
-  background-color: #000000; }
-
-.text-dark {
-  color: #000000; }
-
 *,
 *::before,
 *::after {
@@ -204,8 +150,112 @@ img {
   /* 使之貼其父元素，才不會有圖片過大情況發生 */
   height: auto; }
 
+a {
+  color: inherit; }
+
 .container {
-  min-width: 1110px;
+  max-width: 1110px;
   margin: 0 auto; }
+
+.text-primary {
+  color: #AA0601; }
+
+.text-secondary {
+  color: #FBF2F2; }
+
+.text-info {
+  color: #5F3E2D; }
+
+.text-warning {
+  color: #B75929; }
+
+.text-danger {
+  color: #650300; }
+
+.text-gray {
+  color: #555555; }
+
+.text-deep-gray {
+  color: #212529; }
+
+.text-light {
+  color: #DEE2E6; }
+
+.text-dark {
+  color: #000000; }
+
+.text-white {
+  color: #FFFFFF; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-italic {
+  font-style: italic; }
+
+.text-decoration-none {
+  text-decoration: none; }
+
+.font-weight-bold {
+  font-weight: 700; }
+
+.font-weight-black {
+  font-weight: 900; }
+
+.bg-primary {
+  background-color: #AA0601; }
+
+.bg-secondary {
+  background-color: #FBF2F2; }
+
+.bg-info {
+  background-color: #5F3E2D; }
+
+.bg-warning {
+  background-color: #B75929; }
+
+.bg-danger {
+  background-color: #650300; }
+
+.bg-gray {
+  background-color: #555555; }
+
+.bg-deep-gray {
+  background-color: #212529; }
+
+.bg-light {
+  background-color: #DEE2E6; }
+
+.bg-dark {
+  background-color: #000000; }
+
+.bg-white {
+  background-color: #FFFFFF; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.logo {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+  display: block;
+  width: 80px;
+  height: 49px; }
 
 /*# sourceMappingURL=all.css.map */
