@@ -59,20 +59,21 @@ $themes: (
     'white':     $white
 );
 
-$space-default:  1rem;
+$space-default:  1rem; //16px
 $space:(
     0:  0,
-    1:  ($space-default * 0.25),
-    2:  ($space-default * 0.5),
+    1:  ($space-default * 0.25), //4px
+    2:  ($space-default * 0.5),  //8px
     3:  $space-default,
-    4:  ($space-default * 1.5),
-    5:  ($space-default * 2),
-    6:  ($space-default * 2.5),
-    7:  ($space-default * 3),
-    8:  ($space-default * 3.5),
-    9:  ($space-default * 4),
-    10: ($space-default * 4.5),
-    11: ($space-default * 5)
+    4:  ($space-default * 1.5),  //24px
+    5:  ($space-default * 2),    //32px
+    6:  ($space-default * 2.5),  //40px
+    7:  ($space-default * 3),    //48px
+    8:  ($space-default * 3.5),  //56px
+    9:  ($space-default * 4),    //64px
+    10: ($space-default * 4.5),  //72px
+    11: ($space-default * 5),    //80px
+    12: ($space-default * 5.5)   //88px
 );
 
 //box-shadow
