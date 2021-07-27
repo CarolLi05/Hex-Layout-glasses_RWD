@@ -978,10 +978,10 @@ h6, .h6 {
   height: 49px; }
 
 .nav-link {
-  position: relative;
-  display: block;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: relative;
+  display: block;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
@@ -1002,6 +1002,9 @@ h6, .h6 {
     -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
             transform: scaleX(1); }
+  .nav-link:after {
+    height: 0.5rem;
+    background-color: #FFFFFF; }
 
 .banner {
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
