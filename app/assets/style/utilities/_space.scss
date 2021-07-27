@@ -27,8 +27,7 @@
 }
 
 //margin
-@each $num,
-$value in $space {
+@each $num, $value in $space {
     .m-#{$num} {
         margin: $value;
     }
@@ -58,4 +57,14 @@ $value in $space {
     .ml-#{$num} {
         margin-left: $value;
     }
+}
+
+.mx-auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
 }
