@@ -141,7 +141,8 @@ ul {
 
 body {
   color: #000000;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Segoe UI", Roboto, "Noto Sans TC", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 img {
   display: block;
@@ -157,6 +158,24 @@ a {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700; }
+
+h1, .h1 {
+  font-size: 4rem; }
+
+h2, .h2 {
+  font-size: 3rem; }
+
+h3, .h3 {
+  font-size: 2.25rem; }
+
+h4, .h4 {
+  font-size: 1.5rem; }
+
+h5, .h5 {
+  font-size: 1.25rem; }
+
+h6, .h6 {
+  font-size: 1rem; }
 
 .container {
   max-width: 1110px;
@@ -216,12 +235,12 @@ h1, h2, h3, h4, h5, h6,
 .justify-start {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start; }
+          justify-content: flex-start; }
 
 .justify-end {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end; }
+          justify-content: flex-end; }
 
 .justify-center {
   -webkit-box-pack: center;
@@ -855,6 +874,14 @@ h1, h2, h3, h4, h5, h6,
 .ml-12 {
   margin-left: 5.5rem; }
 
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto; }
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto; }
+
 .text-primary {
   color: #AA0601; }
 
@@ -899,6 +926,9 @@ h1, h2, h3, h4, h5, h6,
 
 .text-decoration-none {
   text-decoration: none; }
+
+.font-weight-normal {
+  font-weight: 400; }
 
 .font-weight-bold {
   font-weight: 700; }
@@ -948,6 +978,7 @@ h1, h2, h3, h4, h5, h6,
   height: 49px; }
 
 .nav-link {
+  position: relative;
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -971,5 +1002,11 @@ h1, h2, h3, h4, h5, h6,
     -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
             transform: scaleX(1); }
+
+.banner {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+  height: calc(100vh - 90px);
+  background-size: cover;
+  background-position: center center; }
 
 /*# sourceMappingURL=all.css.map */
