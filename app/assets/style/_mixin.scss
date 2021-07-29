@@ -37,7 +37,7 @@
         @content
     }
 };
-@mixin pad-768{
+@mixin pad-767{
     @media ( max-width: 768px){
         @content
     }
@@ -48,7 +48,7 @@
     }
 };
 @mixin mobile-375{
-    @media ( max-width: 320px){
+    @media ( max-width: 375px){
         @content
     }
 }

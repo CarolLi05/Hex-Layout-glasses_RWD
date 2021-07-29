@@ -1,0 +1,11 @@
+
+.footer-link{
+    .material-icons-outlined {
+        padding: 6px;
+    }
+    a{
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
