@@ -145,11 +145,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Segoe UI", Roboto, "Noto Sans TC", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 img {
-  display: block;
-  /* 去除圖片底下的2-3px空白 */
-  /*vertical-align: middle;  也是去除圖片底下的2-3px空白 */
+  /* 去除圖片底下的2-3px神奇空白 */
+  vertical-align: middle;
   max-width: 100%;
-  /* 使之貼其父元素，才不會有圖片過大情況發生 */
   height: auto; }
 
 a {
@@ -177,6 +175,53 @@ h6, .h6 {
 .container {
   max-width: 1110px;
   margin: 0 auto; }
+
+.header {
+  font-size: 1.25rem;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.logo {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+  width: 80px;
+  height: 49px; }
+
+.nav-link {
+  padding-bottom: 10px;
+  position: relative;
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .nav-link:after {
+    content: "";
+    width: 100%;
+    height: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scaleX(0) translate3d(0, 0, 0);
+            transform: scaleX(0) translate3d(0, 0, 0); }
+  .nav-link:hover:after {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1); }
+  .nav-link:after {
+    height: 0.5rem;
+    background-color: #FFFFFF; }
+
+.footer-link .material-icons-outlined {
+  padding: 6px; }
+
+.footer-link a:hover {
+  text-decoration: underline; }
 
 @font-face {
   font-family: 'Material Icons';
@@ -998,57 +1043,24 @@ h6, .h6 {
 .bg-white {
   background-color: #FFFFFF; }
 
-.header {
-  font-size: 1.25rem;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-
-.logo {
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
-  width: 80px;
-  height: 49px; }
-
-.nav-link {
-  padding-bottom: 10px;
-  position: relative;
-  display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-  .nav-link:after {
-    content: "";
-    width: 100%;
-    height: 0.5rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #FFFFFF;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    -webkit-transform: scaleX(0) translate3d(0, 0, 0);
-            transform: scaleX(0) translate3d(0, 0, 0); }
-  .nav-link:hover:after {
-    -webkit-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-            transform: scaleX(1); }
-  .nav-link:after {
-    height: 0.5rem;
-    background-color: #FFFFFF; }
-
-.footer-link .material-icons-outlined {
-  padding: 6px; }
-
-.footer-link a:hover {
-  text-decoration: underline; }
-
 .banner {
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
   height: calc(100vh - 90px);
   background-size: cover;
   background-position: center center; }
+
+.introduce {
+  padding-top: 60px;
+  padding-bottom: 80px; }
+
+.introduce-item {
+  width: 24%; }
+
+.classic-info {
+  padding-top: 60px;
+  padding-bottom: 80px; }
+
+.classic-info-img {
+  width: 635px; }
 
 /*# sourceMappingURL=all.css.map */
