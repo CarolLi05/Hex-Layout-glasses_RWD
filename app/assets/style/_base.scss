@@ -13,11 +13,9 @@ body{
 }
 
 img {
-    display: block;
-    /* 去除圖片底下的2-3px空白 */
-    /*vertical-align: middle;  也是去除圖片底下的2-3px空白 */
+    /* 去除圖片底下的2-3px神奇空白 */
+    vertical-align: middle;
     max-width: 100%;
-    /* 使之貼其父元素，才不會有圖片過大情況發生 */
     height: auto;
 }
 
@@ -55,8 +53,4 @@ h6, .h6 {
     font-size: $h6-font-size;
 }
 
-.container{
-    max-width: 1110px;
-    margin: 0 auto;
-}
 
