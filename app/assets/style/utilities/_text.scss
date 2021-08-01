@@ -1,4 +1,8 @@
 
+.display-1{
+    font-size: $display-1;
+}
+
 @each $key, $value in $themes {
     .text-#{$key} {
         color: $value;

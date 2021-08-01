@@ -23,3 +23,29 @@
 .classic-info-img{
     width: 635px;
 }
+
+.co-branding{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true) no-repeat center center;
+    background-size: cover;
+}
+
+.co-branding-item {
+    &.left {
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true);
+    }
+
+    &.right {
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true);
+    }
+    width: 540px;
+    height: 455px;
+    background-size: cover;
+    background-position: center center;
+}
+.co-branding-link{
+    width: 540px;
+    height: 455px;
+    background-color: rgba($white, 0.5);
+}
