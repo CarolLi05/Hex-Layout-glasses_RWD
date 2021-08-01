@@ -49,3 +49,25 @@
     height: 455px;
     background-color: rgba($white, 0.5);
 }
+
+.recommand{
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.recommand-item{
+    width: 255px;
+    height: 460px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+.recommand-img{
+    height: 256px;
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+}
+
+.recommand-date{
+    margin-top: 52px;
+}
