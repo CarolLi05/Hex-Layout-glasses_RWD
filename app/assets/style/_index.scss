@@ -71,3 +71,24 @@
 .recommand-date{
     margin-top: 52px;
 }
+
+.contact{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    p{
+        margin-bottom: 20px;
+    }
+    .content{
+        max-width: 730px;
+    }
+}
+
+.contact-btn{
+    padding-right: 143px;
+    padding-left: 143px;
+    border: 0;
+    cursor: pointer;
+    &:hover{
+        background-color: darken( $danger, $amount: 0.5);
+    }
+}

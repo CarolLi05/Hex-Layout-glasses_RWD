@@ -1,0 +1,12 @@
+
+@each $key, $value in $sizes {
+    .w-#{$key} {
+        width: $value;
+    }
+}
+
+@each $key, $value in $sizes {
+    .h-#{$key} {
+        height: $value;
+    }
+}

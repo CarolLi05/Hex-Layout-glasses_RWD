@@ -77,6 +77,14 @@ $space:(
     12: ($space-default * 5.5)   //88px
 );
 
+$sizes:(
+    'auto': auto,
+    25:     25%,
+    50:     50%,
+    75:     75%,
+    100:    100%
+);
+
 //box-shadow
 $box-shadow: 0px 2px 6px #00000029;
 
