@@ -1049,6 +1049,44 @@ h6, .h6 {
 .bg-white {
   background-color: #FFFFFF; }
 
+input, textarea {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px; }
+
+.w-auto {
+  width: auto; }
+
+.w-25 {
+  width: 25%; }
+
+.w-50 {
+  width: 50%; }
+
+.w-75 {
+  width: 75%; }
+
+.w-100 {
+  width: 100%; }
+
+.h-auto {
+  height: auto; }
+
+.h-25 {
+  height: 25%; }
+
+.h-50 {
+  height: 50%; }
+
+.h-75 {
+  height: 75%; }
+
+.h-100 {
+  height: 100%; }
+
 .banner {
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
   height: calc(100vh - 90px);
@@ -1108,5 +1146,21 @@ h6, .h6 {
 
 .recommand-date {
   margin-top: 52px; }
+
+.contact {
+  padding-top: 60px;
+  padding-bottom: 80px; }
+  .contact p {
+    margin-bottom: 20px; }
+  .contact .content {
+    max-width: 730px; }
+
+.contact-btn {
+  padding-right: 143px;
+  padding-left: 143px;
+  border: 0;
+  cursor: pointer; }
+  .contact-btn:hover {
+    background-color: #620300; }
 
 /*# sourceMappingURL=all.css.map */
