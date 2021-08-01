@@ -992,6 +992,9 @@ h6, .h6 {
 .text-white {
   color: #FFFFFF; }
 
+.text-muted {
+  color: #707070; }
+
 .text-left {
   text-align: left; }
 
@@ -1086,5 +1089,24 @@ h6, .h6 {
   width: 540px;
   height: 455px;
   background-color: rgba(255, 255, 255, 0.5); }
+
+.recommand {
+  padding-top: 60px;
+  padding-bottom: 80px; }
+
+.recommand-item {
+  width: 255px;
+  height: 460px;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0px 2px 6px #00000029;
+          box-shadow: 0px 2px 6px #00000029; }
+
+.recommand-img {
+  height: 256px;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem; }
+
+.recommand-date {
+  margin-top: 52px; }
 
 /*# sourceMappingURL=all.css.map */
