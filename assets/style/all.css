@@ -959,6 +959,9 @@ h6, .h6 {
   margin-top: auto;
   margin-bottom: auto; }
 
+.display-1 {
+  font-size: 4.5rem; }
+
 .text-primary {
   color: #AA0601; }
 
@@ -1062,5 +1065,26 @@ h6, .h6 {
 
 .classic-info-img {
   width: 635px; }
+
+.co-branding {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true) no-repeat center center;
+  background-size: cover; }
+
+.co-branding-item {
+  width: 540px;
+  height: 455px;
+  background-size: cover;
+  background-position: center center; }
+  .co-branding-item.left {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true); }
+  .co-branding-item.right {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true); }
+
+.co-branding-link {
+  width: 540px;
+  height: 455px;
+  background-color: rgba(255, 255, 255, 0.5); }
 
 /*# sourceMappingURL=all.css.map */
