@@ -15,6 +15,10 @@
     width: 24%;
 }
 
+.introduce-icon{
+    font-size: 100px;
+}
+
 .classic-info{
     padding-top: 60px;
     padding-bottom: 80px;
@@ -89,6 +93,65 @@
     border: 0;
     cursor: pointer;
     &:hover{
-        background-color: darken( $danger, $amount: 0.5);
+        background-color: darken($danger, 0.5);
     }
 }
+
+// /* 參考做法 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox */
+// .check-label {
+//     display: block;
+//     position: relative;
+//     padding-left: 35px;
+//     margin-bottom: 40px;
+//     cursor: pointer;
+//     user-select: none;
+
+//     input {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         cursor: pointer;
+//         width: 0px;
+//         height: 0px;
+//     }
+// }
+
+// .checkmark {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 25px;
+//     height: 25px;
+//     border: 3px solid $black;
+//     border-radius: 4px;
+//     background-color: $white;
+
+//     &:after {
+//         content: "";
+//         position: absolute;
+//         display: none;
+//     }
+// }
+
+// /* On mouse-over, add a grey background color */
+// .check-label:hover input~.checkmark {
+//     background-color: $gray-5;
+// }
+
+// /* When the checkbox is checked, add a blue background */
+// .check-label input:checked~.checkmark {
+//     background-color: $white;
+// }
+
+// .check-label input:checked~.checkmark:after {
+//     display: block;
+// }
+
+// .check-label .checkmark:after {
+//     left: 6px;
+//     width: 8px;
+//     height: 14px;
+//     border: solid $black;
+//     border-width: 0 3px 3px 0;
+//     transform: rotate(45deg);
+// }
