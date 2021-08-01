@@ -258,6 +258,9 @@ h6, .h6 {
 .material-icons.md-light.md-inactive {
   color: rgba(255, 255, 255, 0.3); }
 
+.material-icons.md-danger {
+  color: #650300; }
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1099,6 +1102,9 @@ input, textarea {
 
 .introduce-item {
   width: 24%; }
+
+.introduce-icon {
+  font-size: 100px; }
 
 .classic-info {
   padding-top: 60px;
