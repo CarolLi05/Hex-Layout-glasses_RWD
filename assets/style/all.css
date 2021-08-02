@@ -655,6 +655,52 @@ h6, .h6 {
 .pl-12 {
   padding-left: 5.5rem; }
 
+.p-14 {
+  padding: 5.75rem; }
+
+.px-14 {
+  padding-right: 5.75rem;
+  padding-left: 5.75rem; }
+
+.py-14 {
+  padding-top: 5.75rem;
+  padding-bottom: 5.75rem; }
+
+.pt-14 {
+  padding-top: 5.75rem; }
+
+.pb-14 {
+  padding-bottom: 5.75rem; }
+
+.pr-14 {
+  padding-right: 5.75rem; }
+
+.pl-14 {
+  padding-left: 5.75rem; }
+
+.p-15 {
+  padding: 6rem; }
+
+.px-15 {
+  padding-right: 6rem;
+  padding-left: 6rem; }
+
+.py-15 {
+  padding-top: 6rem;
+  padding-bottom: 6rem; }
+
+.pt-15 {
+  padding-top: 6rem; }
+
+.pb-15 {
+  padding-bottom: 6rem; }
+
+.pr-15 {
+  padding-right: 6rem; }
+
+.pl-15 {
+  padding-left: 6rem; }
+
 .m-0 {
   margin: 0; }
 
@@ -954,6 +1000,52 @@ h6, .h6 {
 .ml-12 {
   margin-left: 5.5rem; }
 
+.m-14 {
+  margin: 5.75rem; }
+
+.mx-14 {
+  margin-right: 5.75rem;
+  margin-left: 5.75rem; }
+
+.my-14 {
+  margin-top: 5.75rem;
+  margin-bottom: 5.75rem; }
+
+.mt-14 {
+  margin-top: 5.75rem; }
+
+.mb-14 {
+  margin-bottom: 5.75rem; }
+
+.mr-14 {
+  margin-right: 5.75rem; }
+
+.ml-14 {
+  margin-left: 5.75rem; }
+
+.m-15 {
+  margin: 6rem; }
+
+.mx-15 {
+  margin-right: 6rem;
+  margin-left: 6rem; }
+
+.my-15 {
+  margin-top: 6rem;
+  margin-bottom: 6rem; }
+
+.mt-15 {
+  margin-top: 6rem; }
+
+.mb-15 {
+  margin-bottom: 6rem; }
+
+.mr-15 {
+  margin-right: 6rem; }
+
+.ml-15 {
+  margin-left: 6rem; }
+
 .mx-auto {
   margin-right: auto;
   margin-left: auto; }
@@ -1096,6 +1188,12 @@ input, textarea {
   background-size: cover;
   background-position: center center; }
 
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 3rem; }
+  .banner h3 {
+    font-size: 1.25rem; } }
+
 .introduce {
   padding-top: 60px;
   padding-bottom: 80px; }
@@ -1105,6 +1203,15 @@ input, textarea {
 
 .introduce-icon {
   font-size: 100px; }
+
+@media (max-width: 768px) {
+  .introduce {
+    padding-top: 40px;
+    padding-bottom: 56px; }
+    .introduce h1 {
+      font-size: 3rem; }
+    .introduce h3 {
+      font-size: 1.25rem; } }
 
 .classic-info {
   padding-top: 60px;
@@ -1168,5 +1275,19 @@ input, textarea {
   cursor: pointer; }
   .contact-btn:hover {
     background-color: #620300; }
+
+.page-title {
+  border-left: 8px solid #AA0601;
+  margin-bottom: 60px; }
+
+.subtitle {
+  font-size: 32px;
+  margin-bottom: 36px; }
+
+.qa-info li:last-child {
+  margin-bottom: 160px; }
+
+.qa-content {
+  padding-left: 60px; }
 
 /*# sourceMappingURL=all.css.map */
