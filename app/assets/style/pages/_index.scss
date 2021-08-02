@@ -6,6 +6,18 @@
     background-position: center center;
 }
 
+@include pad-768{
+     .banner {
+         h1{
+             font-size: $h2-font-size;
+         }
+         h3 {
+             font-size: $h5-font-size;
+         }
+     }
+}
+   
+
 .introduce{
     padding-top: 60px;
     padding-bottom: 80px;
@@ -17,6 +29,20 @@
 
 .introduce-icon{
     font-size: 100px;
+}
+
+@include pad-768 {
+    .introduce {
+        padding-top: 40px;
+        padding-bottom: 56px;
+        h1 {
+            font-size: $h2-font-size;
+        }
+
+        h3 {
+            font-size: $h5-font-size;
+        }
+    }
 }
 
 .classic-info{
