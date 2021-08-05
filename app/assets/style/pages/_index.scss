@@ -4,7 +4,7 @@
     height: calc(100vh - 90px);
     background-size: cover;
     background-position: center center;
-    @include mobile-767 {
+    @include pad {
         h1 {
             font-size: $h2-font-size;
         }
@@ -18,7 +18,7 @@
 .introduce{
     padding-top: 60px;
     padding-bottom: 80px;
-    @include mobile-767 {
+    @include pad {
         padding-top: 40px;
         padding-bottom: 56px;
 

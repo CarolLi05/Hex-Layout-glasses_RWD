@@ -3,11 +3,13 @@
 .page-title {
     border-left: 8px solid $primary;
     margin-bottom: 60px;
-    @include pad-992{
+    @include pad{
+        margin-top: 60px;
         margin-bottom: 40px;
     }
-    @include mobile-767 {
+    @include mobile {
         font-size: 28px;
+        margin-top: 28px;
         margin-bottom: 24px;
     }
 }
@@ -15,28 +17,37 @@
 .subtitle{
     font-size: 32px;
     margin-bottom: 36px;
-    @include pad-992 {
+    @include pad {
         margin-bottom: 32px;
     }
 
-    @include mobile-767 {
+    @include mobile {
         font-size: $h5-font-size;
+        font-weight: $font-weight-base;
         margin-bottom: 24px;
     }
 }
 
 .qa-info{
-    li:last-child{
-        margin-bottom: 160px;
+    margin-bottom: 160px;
+    @include pad {
+        margin-bottom: 96px;
+    }
+    @include mobile {
+        margin-bottom: 56px;
     }
 }
 
 .qa-question{
-    @include mobile-767{
+    @include mobile{
         font-size: $font-size-base;
     }
 }
 
 .qa-content{
     padding-left: 60px;
+    @include mobile{
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
 }
