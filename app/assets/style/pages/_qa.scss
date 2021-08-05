@@ -3,16 +3,37 @@
 .page-title {
     border-left: 8px solid $primary;
     margin-bottom: 60px;
+    @include pad-992{
+        margin-bottom: 40px;
+    }
+    @include mobile-767 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
 }
 
 .subtitle{
     font-size: 32px;
     margin-bottom: 36px;
+    @include pad-992 {
+        margin-bottom: 32px;
+    }
+
+    @include mobile-767 {
+        font-size: $h5-font-size;
+        margin-bottom: 24px;
+    }
 }
 
 .qa-info{
     li:last-child{
         margin-bottom: 160px;
+    }
+}
+
+.qa-question{
+    @include mobile-767{
+        font-size: $font-size-base;
     }
 }
 
