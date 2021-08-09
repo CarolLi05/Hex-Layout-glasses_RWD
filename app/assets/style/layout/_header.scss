@@ -3,6 +3,10 @@
     font-size: $h5-font-size;
     padding-top: 30px;
     padding-bottom: 30px;
+    @include pad{
+        padding-right: 39px;
+        padding-left: 39px;
+    }
 }
 
 .logo{
