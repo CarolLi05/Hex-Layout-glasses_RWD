@@ -3,6 +3,10 @@
     font-size: $h5-font-size;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-right: 88px;
+    padding-left: 88px;
+    // padding-right: $map-get($space, 12);
+    // padding-left: $map-get($space, 12);
     @include pad{
         padding-right: 39px;
         padding-left: 39px;
