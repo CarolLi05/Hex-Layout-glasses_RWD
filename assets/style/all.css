@@ -186,7 +186,9 @@ h6, .h6 {
 .header {
   font-size: 1.25rem;
   padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  padding-right: 88px;
+  padding-left: 88px; }
   @media (max-width: 768px) {
     .header {
       padding-right: 39px;
