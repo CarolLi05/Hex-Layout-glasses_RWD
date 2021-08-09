@@ -187,6 +187,10 @@ h6, .h6 {
   font-size: 1.25rem;
   padding-top: 30px;
   padding-bottom: 30px; }
+  @media (max-width: 768px) {
+    .header {
+      padding-right: 39px;
+      padding-left: 39px; } }
 
 .logo {
   text-indent: 101%;
