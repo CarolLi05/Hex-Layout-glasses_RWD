@@ -175,7 +175,8 @@ h6, .h6 {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 15px; }
+  padding: 0 15px;
+  width: 100%; }
   @media (max-width: 768px) {
     .container {
       max-width: 720px; } }
@@ -193,6 +194,12 @@ h6, .h6 {
     .header {
       padding-right: 39px;
       padding-left: 39px; } }
+
+.header-nav-link {
+  margin-left: 4rem; }
+  @media (max-width: 768px) {
+    .header-nav-link {
+      margin-left: 2.5rem; } }
 
 .logo {
   text-indent: 101%;
@@ -230,11 +237,55 @@ h6, .h6 {
     height: 0.5rem;
     background-color: #FFFFFF; }
 
-.footer-link .material-icons-outlined {
-  padding: 6px; }
+.footer {
+  padding: 32px 0px; }
+  @media (max-width: 768px) {
+    .footer {
+      padding-right: 33px;
+      padding-left: 33px; } }
+
+.footer-nav-link {
+  margin-right: 3rem; }
+  @media (max-width: 768px) {
+    .footer-nav-link {
+      margin-right: 2.5rem; } }
+
+.icon-links .nav-link {
+  margin-right: 2rem; }
+  @media (max-width: 768px) {
+    .icon-links .nav-link {
+      margin-right: 1.5rem; } }
+
+@media (max-width: 768px) {
+  .icon-links img {
+    width: 24px;
+    height: 24px; } }
+
+.footer-link .material-icons {
+  font-size: 48px;
+  margin-right: 16px; }
+  @media (max-width: 768px) {
+    .footer-link .material-icons {
+      font-size: 24px;
+      margin-right: 8px; } }
+
+@media (max-width: 768px) {
+  .footer-link a {
+    font-size: 20px; } }
 
 .footer-link a:hover {
   text-decoration: underline; }
+
+.footer-hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+  @media (max-width: 768px) {
+    .footer-hr {
+      margin-top: 20px;
+      margin-bottom: 24px; } }
+
+.terms {
+  font-size: 14px; }
 
 @font-face {
   font-family: 'Material Icons';
@@ -1157,6 +1208,16 @@ h6, .h6 {
 .bg-white {
   background-color: #FFFFFF; }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
 input, textarea {
   width: 100%;
   background-color: #FFFFFF;
@@ -1206,6 +1267,13 @@ input, textarea {
     .banner h3 {
       font-size: 1.25rem; } }
 
+.index-title {
+  margin-bottom: 40px; }
+  @media (max-width: 768px) {
+    .index-title {
+      margin-bottom: 32px;
+      font-size: 32px; } }
+
 .introduce {
   padding-top: 60px;
   padding-bottom: 80px; }
@@ -1220,6 +1288,9 @@ input, textarea {
 
 .introduce-item {
   width: 24%; }
+  @media (max-width: 768px) {
+    .introduce-item {
+      width: 48%; } }
 
 .introduce-icon {
   font-size: 100px; }
@@ -1227,15 +1298,52 @@ input, textarea {
 .classic-info {
   padding-top: 60px;
   padding-bottom: 80px; }
+  @media (max-width: 768px) {
+    .classic-info {
+      padding-top: 40px;
+      padding-bottom: 56px; } }
+
+.classic-info-title {
+  margin: 0 30px; }
+  @media (max-width: 768px) {
+    .classic-info-title {
+      font-size: 28px; } }
+  .classic-info-title .material-icons {
+    font-size: 44px;
+    margin-right: 10px; }
+    @media (max-width: 768px) {
+      .classic-info-title .material-icons {
+        font-size: 40px;
+        margin-right: 8px; } }
+
+.classic-info-item {
+  margin-bottom: 32px; }
+  @media (max-width: 768px) {
+    .classic-info-item {
+      margin-bottom: 8px; } }
+
+@media (max-width: 768px) {
+  .classic-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
 
 .classic-info-img {
   width: 635px; }
+  @media (max-width: 768px) {
+    .classic-info-img {
+      width: 390px; } }
 
 .co-branding {
   padding-top: 60px;
   padding-bottom: 80px;
   background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true) no-repeat center center;
   background-size: cover; }
+  @media (max-width: 768px) {
+    .co-branding {
+      padding-top: 40px;
+      padding-bottom: 56px; } }
 
 .co-branding-item {
   width: 540px;
@@ -1246,22 +1354,46 @@ input, textarea {
     background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true); }
   .co-branding-item.right {
     background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true); }
+  @media (max-width: 768px) {
+    .co-branding-item {
+      width: 330px;
+      height: 278px; } }
 
 .co-branding-link {
   width: 540px;
   height: 455px;
   background-color: rgba(255, 255, 255, 0.5); }
+  @media (max-width: 768px) {
+    .co-branding-link {
+      width: 330px;
+      height: 278px;
+      font-size: 32px; } }
 
 .recommand {
   padding-top: 60px;
   padding-bottom: 80px; }
+  @media (max-width: 768px) {
+    .recommand {
+      padding-top: 40px;
+      padding-bottom: 56px; } }
 
 .recommand-item {
-  width: 255px;
-  height: 460px;
+  width: 23%;
   border-radius: 0.25rem;
   -webkit-box-shadow: 0px 2px 6px #00000029;
           box-shadow: 0px 2px 6px #00000029; }
+  @media (max-width: 768px) {
+    .recommand-item {
+      width: 48%; }
+      .recommand-item:nth-child(1), .recommand-item:nth-child(2) {
+        margin-bottom: 32px; } }
+
+.recommand-body {
+  padding: 16px; }
+  @media (max-width: 768px) {
+    .recommand-body {
+      padding-right: 24px;
+      padding-left: 24px; } }
 
 .recommand-img {
   height: 256px;
@@ -1274,18 +1406,43 @@ input, textarea {
 .contact {
   padding-top: 60px;
   padding-bottom: 80px; }
-  .contact p {
-    margin-bottom: 20px; }
-  .contact .content {
-    max-width: 730px; }
+  @media (max-width: 768px) {
+    .contact {
+      padding-top: 40px;
+      padding-bottom: 56px; } }
+  .contact input, .contact textarea {
+    background-color: transparent;
+    margin-bottom: 16px; }
+    @media (max-width: 768px) {
+      .contact input, .contact textarea {
+        margin-bottom: 8px; } }
+
+.contact-title {
+  margin-bottom: 24px; }
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 32px; } }
+
+.contact-text {
+  margin-bottom: 20px; }
+  @media (max-width: 768px) {
+    .contact-text {
+      margin-bottom: 16px; } }
+
+.agreement {
+  font-size: 14px; }
 
 .contact-btn {
-  padding-right: 143px;
-  padding-left: 143px;
+  padding: 16px 143px;
   border: 0;
   cursor: pointer; }
   .contact-btn:hover {
     background-color: #620300; }
+  @media (max-width: 768px) {
+    .contact-btn {
+      font-size: 14px;
+      padding: 10px 77px;
+      margin-top: 40px; } }
 
 .page-title {
   border-left: 8px solid #AA0601;
