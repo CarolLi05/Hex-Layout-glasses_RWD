@@ -1,11 +1,65 @@
 
-.footer-link{
-    .material-icons-outlined {
-        padding: 6px;
+.footer{
+    padding: 32px 0px;
+    @include pad{
+        padding-right: 33px;
+        padding-left: 33px;
     }
+}
+
+.footer-nav-link{
+    margin-right: map-get($space, 7);
+    @include pad{
+        margin-right: map-get($space, 6);
+    }
+}
+
+.icon-links {
+    .nav-link {
+        margin-right: map-get($space, 5);
+
+        @include pad {
+            margin-right: map-get($space, 4);
+        }
+    }
+
+    img {
+        @include pad {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.footer-link{
+    .material-icons {
+        font-size: 48px;
+        margin-right: 16px;
+        @include pad {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+    }
+
     a{
+        @include pad{
+            font-size: 20px;
+        }
         &:hover {
             text-decoration: underline;
         }
     }
+}
+
+.footer-hr{
+    margin-top: map-get($space, 4);
+    margin-bottom: map-get($space, 4);
+    @include pad{
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+}
+
+.terms{
+    font-size: 14px;
 }

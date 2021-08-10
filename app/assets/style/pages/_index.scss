@@ -15,6 +15,14 @@
     }
 }
 
+.index-title{
+    margin-bottom: 40px;
+    @include pad{
+        margin-bottom: 32px;
+        font-size: 32px;
+    }
+}
+
 .introduce{
     padding-top: 60px;
     padding-bottom: 80px;
@@ -34,6 +42,9 @@
 
 .introduce-item{
     width: 24%;
+    @include pad{
+        width: 48%;
+    }
 }
 
 .introduce-icon{
@@ -43,10 +54,45 @@
 .classic-info{
     padding-top: 60px;
     padding-bottom: 80px;
+    @include pad{
+        padding-top: 40px;
+        padding-bottom: 56px;
+    }
+}
+
+.classic-info-title{
+    margin: 0 30px;
+    @include pad{
+        font-size: 28px;
+    }
+    .material-icons {
+        font-size: 44px;
+        margin-right: 10px;
+        @include pad {
+            font-size: 40px;
+            margin-right: 8px;
+        }
+    }
+}
+
+.classic-info-item{
+    margin-bottom: 32px;
+    @include pad{
+        margin-bottom: 8px;
+    }
+}
+
+.classic-reverse{
+    @include pad {
+        flex-direction: row; 
+    }
 }
 
 .classic-info-img{
     width: 635px;
+    @include pad{
+        width: 390px;
+    }
 }
 
 .co-branding{
@@ -54,6 +100,10 @@
     padding-bottom: 80px;
     background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true) no-repeat center center;
     background-size: cover;
+    @include pad{
+        padding-top: 40px;
+        padding-bottom: 56px;
+    }
 }
 
 .co-branding-item {
@@ -68,23 +118,50 @@
     height: 455px;
     background-size: cover;
     background-position: center center;
+    @include pad {
+        width: 330px;
+        height: 278px;
+    }
 }
 .co-branding-link{
     width: 540px;
     height: 455px;
     background-color: rgba($white, 0.5);
+    @include pad{
+        width: 330px;
+        height: 278px;
+        font-size: 32px;
+    }
 }
 
 .recommand{
     padding-top: 60px;
     padding-bottom: 80px;
+    @include pad{
+        padding-top: 40px;
+        padding-bottom: 56px;
+    }
 }
 
 .recommand-item{
-    width: 255px;
-    height: 460px;
+    width: 23%;
     border-radius: $border-radius;
     box-shadow: $box-shadow;
+    @include pad{
+        width: 48%;
+        &:nth-child(1),
+        &:nth-child(2){
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.recommand-body{
+    padding: 16px;
+    @include pad{
+        padding-right: 24px;
+        padding-left: 24px;
+    }
 }
 
 .recommand-img{
@@ -100,21 +177,48 @@
 .contact{
     padding-top: 60px;
     padding-bottom: 80px;
-    p{
-        margin-bottom: 20px;
+    @include pad{
+        padding-top: 40px;
+        padding-bottom: 56px;
     }
-    .content{
-        max-width: 730px;
+    input, textarea{
+        background-color: transparent;
+        margin-bottom: 16px;
+        @include pad{
+            margin-bottom: 8px;
+        }
     }
 }
 
+.contact-title{
+    margin-bottom: 24px;
+    @include pad {
+        font-size: 32px;
+    }
+}
+
+.contact-text{
+    margin-bottom: 20px;
+    @include pad{
+        margin-bottom: 16px;
+    }
+}
+
+.agreement{
+    font-size: 14px;
+}
+
 .contact-btn{
-    padding-right: 143px;
-    padding-left: 143px;
+    padding: 16px 143px;
     border: 0;
     cursor: pointer;
     &:hover{
         background-color: darken($danger, 0.5);
+    }
+    @include pad{
+        font-size: 14px;
+        padding: 10px 77px;
+        margin-top: 40px;
     }
 }
 

@@ -13,6 +13,13 @@
     }
 }
 
+.header-nav-link{
+    margin-left: map-get($space, 9);
+    @include pad{
+        margin-left: map-get($space, 6);
+    }
+}
+
 .logo{
     @include hide-text;
     background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
