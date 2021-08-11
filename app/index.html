@@ -57,7 +57,7 @@ current: index
         SUNGLASSES
       </h2>
     </li>
-    <li class="d-flex align-items-center">
+    <li class="d-flex align-items-center classic-info-item">
       <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-3.png?raw=true" class="classic-info-img">
       <h2 class="d-flex align-items-center text-primary font-weight-bold classic-info-title">
         <span class="material-icons-outlined material-icons">flash_on</span>
@@ -89,7 +89,7 @@ current: index
       <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-1.png?raw=true" alt="" class="recommand-img">
       <div class="recommand-body d-flex flex-column">
         <div class="recommand-text">
-          <span class="recommand-name">Jessy</span>
+          <span class="recommand-name mb-2">Jessy</span>
           <p>眼鏡品質優良，下次還會想來這邊購買！</p>
         </div>
         <time class="text-muted recommand-date d-block">2021/06/20</time>
@@ -99,7 +99,7 @@ current: index
       <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-2.png?raw=true" alt="" class="recommand-img">
       <div class="recommand-body d-flex flex-column">
         <div class="recommand-text">
-          <span class="recommand-name">凱倫</span>
+          <span class="recommand-name mb-2">凱倫</span>
           <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
         </div>
         <time class="text-muted recommand-date d-block">2021/04/18</time>
@@ -109,7 +109,7 @@ current: index
       <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-3.png?raw=true" alt="" class="recommand-img">
       <div class="recommand-body d-flex flex-column">
         <div class="recommand-text">
-          <span class="recommand-name">悠悠</span>
+          <span class="recommand-name mb-2">悠悠</span>
           <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
         </div>
         <time class="text-muted recommand-date d-block">2020/12/25</time>
@@ -119,7 +119,7 @@ current: index
       <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-4.png?raw=true" alt="" class="recommand-img">
       <div class="recommand-body d-flex flex-column">
         <div class="recommand-text">
-          <span class="recommand-name">Kyuan</span>
+          <span class="recommand-name mb-2">Kyuan</span>
           <p>服務很好，品質沒有任何問題，非常喜歡。</p>
         </div>
         <time class="text-muted recommand-date d-block">2020/10/31</time>
@@ -133,21 +133,23 @@ current: index
   <div class="container mx-auto my-0">
     <p class="contact-text">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
     <form action="" method="post">
-      <lebel for="name">姓名</lebel>
+      <label for="name">姓名</label>
       <input type="text" placeholder="陳小明" name="name" class="mb-3">
-      <lebel for="phone">聯絡電話</lebel>
+      <label for="phone">聯絡電話</label>
       <input type="number" placeholder="0912-345-678" name="phone" class="mb-3">
-      <lebel for="email">電子郵件</lebel>
+      <label for="email">電子郵件</label>
       <input type="email" placeholder="example@email.com" name="email" class="mb-3">
-      <lebel for="opinion">意見反應</lebel>
+      <label for="opinion">意見反應</label>
       <textarea name="opinion" id="" cols="30" rows="10" placeholder="請輸入您的意見" class="mb-3"></textarea>
       <!-- <label class="check-label" for="agreement">
         我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
         <input type="checkbox" name="agreement" class="w-auto">
         <span class="checkmark"></span>
       </label> -->
-      <input type="checkbox" name="agreement" class="d-inline-block w-auto">
-      <lebel for="agreement" class="agreement">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</lebel>
+      <div class="d-flex align-items-center check-group">
+        <input type="checkbox" name="agreement" class="d-inline-block w-auto">
+        <label for="agreement" class="agreement">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+      </div>
       <button type="submit" class="contact-btn bg-primary text-white d-block mt-6 mx-auto">確認送出</button>
     </form>
   </div>

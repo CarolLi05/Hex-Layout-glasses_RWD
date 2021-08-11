@@ -1,3 +1,14 @@
+@mixin pad {
+    @media (max-width: 768px) {
+        @content
+    }
+};
+
+@mixin mobile {
+    @media (max-width: 414px) {
+        @content
+    }
+};
 
 @mixin hide-text {
     text-indent: 101%;
@@ -20,6 +31,10 @@
         background-color: $white;
         transition: all 0.2s ease-in-out;
         transform: scaleX(0) translate3d(0, 0, 0);
+        // @include mobile{
+        //     content: none;
+        // }
+
     }
 
     &:hover:after {
@@ -33,21 +48,3 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-@mixin pc{
-    @media (max-width: 1024px){
-        @content
-    }
-};
-
-@mixin pad{
-    @media (max-width: 768px){
-        @content
-    }
-};
-
-@mixin mobile{
-    @media (max-width: 414px){
-        @content
-    }
-};
